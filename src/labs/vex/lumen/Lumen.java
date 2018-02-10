@@ -58,8 +58,4 @@ public class Lumen
     public static void installBootstrap(Bootstrap b) {
         bootstrap = b;
     }
-
-    public static void clean() {
-        bootstrap.dispose();
-    }
 }

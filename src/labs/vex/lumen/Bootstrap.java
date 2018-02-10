@@ -20,7 +20,7 @@ import java.util.ArrayList;
  *
  * @author vex | Ciobanu Laurentiu
  */
-public class Bootstrap implements MediaDisposer.Disposable {
+public class Bootstrap {
     public IDescriber describer;
     public IHardwareHandler hardwareHandler;
     public ILoader loader;
@@ -44,15 +44,4 @@ public class Bootstrap implements MediaDisposer.Disposable {
         HardwareProcessor.process(hardwareList, this.hardwareHandler);
         ModuleProcessor.process(descriptor, this.loader);
     }
-
-    /*
-     * @TODO: Implement the dispose method
-     */
-    /**
-     * dispose() is called when an associated object is garbage collected
-     * and no longer reachable. Note that the associated object cannot be
-     * accessed by the time this method is invoked.
-     */
-    @Override
-    public void dispose() { }
 }
